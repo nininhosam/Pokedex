@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokédex</title>
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="shortcut icon" href="assets/masterball_icon.png" type="image/x-icon">
+</head>
+<body>
+    <main id="main">
+
+        <h1 class="pokemon__data"></h1>
+        <div id="dynamic-image"></div>
+
+        <div class="form">
+            <div class="autocomplete">
+                <input 
+                    type="search" 
+                    name="search" 
+                    class="input__search"
+                    id="search" 
+                    placeholder="Name or ID"
+                    required>
+            </div>
+        </div>
+        <div class="buttons">
+            <button id="prev" class="button btn-prev">Prev &lt</button>
+            <button id="next" class="button btn-next">Next &gt</button>
+        </div>
+
+        <img src="assets/pokedex.png" alt="pokedex" class="pokedex">
+
+    </main>
+    <script type="module" src="script.js"></script>
+    <script type="module" src="auto.js"></script>
+</body>
+</html>
