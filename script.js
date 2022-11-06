@@ -48,6 +48,7 @@ const getBasics = id => {
 }
 function handleErrors(response) {
     if (!response.ok) {
+        bar.blur();
         alert('Invalid Name or ID.');
         throw Error(response.statusText);
     }
@@ -63,6 +64,7 @@ export function procurar() {
             getBasics(search);
         }
     } else {
+        bar.blur();
         window.alert('Input a Name or ID')
     }
 }
